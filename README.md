@@ -2,11 +2,13 @@ As mentioned in my blog-preview-card-main project, I'm getting back into fronten
 
 ---HTML---
 
-In this project, it was similar to blog-preview-card-main; the HTML layout was pretty much the same for the card size of things. For the profile section, I used classes to describe what each element is responsible for, as well as grabbing the element I want to style
+This project was similar to blog-preview-card-main; the HTML layout was pretty much the same for the card sizes. For the profile section, I used classes to describe what each element is responsible for, as well as grabbing the element I want to style
 
 --CSS--
 
-For the CSS, I had a better workflow, so I challenged myself to recreate the Linktree fade-in; for each element, I started a list to go through what needs to be done.
+For the CSS, I had a better workflow, so I challenged myself to recreate the Linktree fade-in; for each element, I started a list of what needed to be done.
+
+LinkTree fade-in 
 ```
 @keyframes fadeInUp {
     from {
@@ -26,4 +28,4 @@ none
 
 ---Overview---
 
-I proud to say I'm starting get back where I was at faster then expected
+I'm proud to say I'm starting to get back where I was at faster than expected
