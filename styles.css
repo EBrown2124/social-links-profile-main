@@ -20,6 +20,11 @@
     font-style: normal;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .card, .link {
+        transition: none;
+    }
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
