@@ -20,10 +20,6 @@
     font-style: normal;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .card, .link {
-        transition: none;
-    }
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -138,6 +134,12 @@ nav{
     to {
         opacity: 1;
         transform: translateY(0); /* Moves to its natural position */
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card, .link {
+        transition: none;
     }
 }
 
