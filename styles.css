@@ -1,0 +1,145 @@
+/* fontend Mentor presets */
+    .attribution { font-size: 0.6875rem; text-align: center; color: var(--white);}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+/*color used in project*/
+:root{
+    --green:hsl(75, 94%, 57%);
+    --white:hsl(0, 0%, 100%);
+    --grey-700:hsl(0, 0%, 20%);
+    --grey-800:hsl(0, 0%, 12%);
+    --grey-900:hsl(0, 0%, 8%);
+}
+
+/* basic setup */
+/* Font used */
+    @font-face {
+    font-family: "Inter", sans-serif;
+    src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+    font-weight: 400 600 700;
+    font-style: normal;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Desktop view */
+body {
+    position: relative;
+    background-color: var(--grey-900);
+    font-family:"Inter", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+    width: 100%;
+}
+
+
+.card {
+    background-color: var(--grey-800);
+    max-width: 380px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 35px;
+    border-radius: 10px;
+}
+
+
+/* profile section */
+.pic {
+    margin-bottom: 20px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: 500;
+}
+
+.location {
+    color: var(--green);
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.infomation {
+    font-size: 14px;
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+
+/* link bar section */
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 15px;
+}
+
+.link {
+    text-decoration: none;
+    color:var(--white);
+    background-color: var(--grey-700);
+    width: 320px;
+    margin: 0 25px;
+    padding: 14px 0;
+    border-radius: 8px;
+}
+
+.link:hover{
+    color: var(--grey-900);
+    background-color: var(--green);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* moblie view*/
+@media (max-width:420px){
+    .card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .link {
+        width: 280px;
+    }
+}
+
+
+/* Fade in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Starts 20px lower down */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Moves to its natural position */
+    }
+}
+
+.card, footer {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+nav{
+    animation: fadeInUp 0.8s ease-out forwards;
+}
